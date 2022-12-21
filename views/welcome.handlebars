@@ -1,0 +1,214 @@
+<html>
+
+<head>
+   <header>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid " style="background-color:black;">
+      <a class="navbar-brand " href="#" style="color: aliceblue;">Pizzerio <img src="/download (1).jpg"
+          style="height: 40px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="padding-left:900 ;">
+          <li class="nav-item">
+            <a class="nav-link active float-right" aria-current="page" href="/" style="color: aliceblue;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/login" style="color: aliceblue;">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/regis" style="color: aliceblue;">Register</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/logout" style="color: aliceblue;">Logout</a>
+          </li>
+          <li class="nav-item" style="padding-top: 5px;">
+            <a class="nav-link active" aria-current="page" href="/mycart/{{id}}" style="color: aliceblue;"><i
+                class="bi bi-cart"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg></a>
+          </li>
+
+      </div>
+    </div>
+  </nav>
+
+      
+     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style>
+
+.card-img-top {
+
+    height: 200px;
+}
+.card-body{
+
+height: 150px;
+
+}
+.a{
+
+height: 80px;
+    padding-top: 50px;
+
+}
+</style>
+</head>
+
+<body>
+
+
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <div class="row" style="    margin-right: 0px;
+    margin-left: 10px;" >
+       
+        <div class="col-md-3">
+          <div class="card text-center" style="width: 20rem;">
+            <img
+              src="/pizza1.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Margherita Pizza</h5>
+              
+             <div class="a">
+              <div class="btn-group ">
+                <a href="/cart/Margherita Pizza/1/{{id}}" class="btn  btn-success">Add to cart</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-3">
+          <div class="card text-center" style="width: 20rem;">
+            <img
+              src="/pizza2.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Golden Corn Pizza</h5>
+             <div class="a">
+              <div class="btn-group">
+                <a href="/cart/Golden Corn Pizza/2/{{id}}" class="btn btn-success">Add to cart</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-3">
+          <div class="card text-center" style="width: 20rem;">
+            <img
+              src="/pizza3.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jalapeno & Red Paprika Pizza</h5>
+             <br><br>
+              <div class="btn-group">
+                <a href="/cart/Jalapeno & Red Paprika Pizza/3/{{id}}" class="btn btn-success">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-3">
+          <div class="card text-center" style="width: 20rem;">
+            <img
+              src="/pizza4.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Double Cheese Margherita Pizza</h5>
+             <br>
+              <div class="btn-group">
+                <a href="/cart/Double Cheese Margherita Pizza/4/{{id}}" class="btn btn-success">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <div class="row" style="    margin-right: 0px;
+    margin-left: 10px;" >
+         <div class="col-md-3">
+          <div class="card text-center" style="width: 20rem;">
+            <img
+              src="/pizza5.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Onion Pizza</h5>
+             <div class="a">
+              <div class="btn-group">
+                <a href="/cart/Onion Pizza/5/{{id}}" class="btn btn-success">Add to cart</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-3">
+          <div class="card text-center" style="width: 20rem;">
+            <img
+              src="/pizza6.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Crisp Capsicum & Fresh Tomato Pizza</h5>
+             <br>
+              <div class="btn-group">
+                <a href="/cart/Crisp Capsicum & Fresh Tomato Pizza/6/{{id}}" class="btn btn-success">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-3">
+          <div class="card text-center" style="width: 20rem;">
+            <img
+              src="/pizza7.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Farmhouse Pizza</h5>
+           <br><br>
+              <div class="btn-group">
+                <a href="/cart/Farmhouse Pizza/7/{{id}}" class="btn btn-success">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-3">
+          <div class="card text-center" style="width: 20rem;">
+            <img
+              src="/pizza8.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Spicy Triple Tango</h5>
+              <br><br>
+              <div class="btn-group">
+                {{!-- <a href="/cart/Spicy Triple Tango/8/{{id}}" class="btn btn-success">Add to cart</a> --}}
+                <a onclick="addCart()" class="btn btn-success">Add to cart</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    
+      </div>
+      <script>
+        function addCart(){
+          console.log("hii")
+        }
+      </script>
+
+</body>
+
+</html>

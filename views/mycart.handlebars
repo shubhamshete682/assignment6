@@ -1,0 +1,118 @@
+<html>
+
+
+<head>
+
+  <header>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid " style="background-color:black;">
+        <a class="navbar-brand " href="#" style="color: aliceblue;">Pizzerio <img src="/download (1).jpg"
+            style="height: 40px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="padding-left:900 ;">
+            <li class="nav-item">
+              <a class="nav-link active float-right" aria-current="page" href="/" style="color: aliceblue;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/login" style="color: aliceblue;">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/regis" style="color: aliceblue;">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/logout" style="color: aliceblue;">Logout</a>
+            </li>
+            
+
+        </div>
+      </div>
+    </nav>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Pizza name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Action</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {{#data }}
+
+
+
+
+      <tr>
+        <td> </td>
+        <td> {{pizza_name}}</td>
+        <td>{{pizza_price}}$
+        </td>
+        <td> {{count}} <a href="/cart/{{pizza_name}}/{{pizza_price}}/{{uuid}}"><button value="Add more" class="btn btn-success"> Add more  </button></a></td>
+        <td>
+          {{amount}}$
+        </td>
+        <td><a href="/delete/{{uuid}}/{{_id}}"><button value="delete" class="btn btn-danger"> Delete</button></a></td>
+
+      </tr>
+      
+      {{/data}}
+    </tbody>
+
+  </table>
+
+  <div style="padding-left: 80px;"><a href="/checkout/{{data1}}"><button value="Checkout" class="btn btn-dark"> Proceed to Checkout</button></a>
+</div>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
